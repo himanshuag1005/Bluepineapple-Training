@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Book_Table</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+	<h1>Book Records</h1>
+	<table style="width: 100%;" id="myTable">
+		<tr>
+			<th>Book Id</th>
+			<th>Book Name</th>
+			<th>Author Name</th>
+			<th>Edition</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<td>B101</td>
+			<td>Analysis & Design of Algorithm</td>
+			<td>Anany Levitin</td>
+			<td>Third</td>
+			<td>400</td>
+		</tr>
+		<tr>
+			<td>B102</td>
+			<td>Let us C</td>
+			<td>Yashavant Kanetkar</td>
+			<td>Second</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>B103</td>
+			<td>Data Structure</td>
+			<td>E Balagurusamy</td>
+			<td>Fourth</td>
+			<td>220</td>
+		</tr>
+		<tr>
+			<td>B104</td>
+			<td>Java Programming</td>
+			<td>Herbert Schildt</td>
+			<td>Seventh</td>
+			<td>550</td>
+		</tr>
+		<tr>
+			<td>B105</td>
+			<td>Linux</td>
+			<td>Jason Cannon</td>
+			<td>Tenth</td>
+			<td>400</td>
+		</tr>
+		<tr>
+			<td>B106</td>
+			<td>DBMS</td>
+			<td>Rajiv Chopra</td>
+			<td>Fifth</td>
+			<td>600</td>
+		</tr>
+	</table><br>
+	
+
+	<p><b>Enter the row number to print the row :</b></p>
+	<input type="number" min="1" id="rowNo" placeholder="Enter Row Number">
+	<button class="submitRowButton" onclick="func()">Submit</button>
+	<p id="bookId"></p>
+
+	<p><b>Enter the column number to sort the column in ascending or descending order by clicking button :</b></p>
+	<input type="number" min="1" id="colNo" placeholder="Enter Column Number">
+	<button class="sortButton" onclick="sortAscTable()">ASC</button>
+	<button class="sortButton" onclick="sortDescTable()">DESC</button>
+	
+<script src="script.js"></script>
+
+
+</body>
+</html>
